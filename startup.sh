@@ -7,15 +7,16 @@ read -p "Enter your full name: " MyName
 read -p "Enter your email address: " MyEmail
 
 # update all
-apt-get update
-apt-get -y upgrade
+sudo apt update
+sudo apt -y upgrade
 
 # usr functions
-apt-get -y install vim
-apt-get -y install terminator
-apt-get -y install terminator
-sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
-apt install tixati
+sudoapt -y install vim
+sudo apt -y install terminator
+sudo apt -y install terminator
+# sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
+curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh
+sudo apt -y install tixati
 
 # Good luck with OpenVPN
 # https://openvpn.net/cloud-docs/openvpn-3-client-for-linux/
@@ -24,9 +25,15 @@ sudo wget https://swupdate.openvpn.net/repos/openvpn-repo-pkg-key.pub
 sudo apt-key add openvpn-repo-pkg-key.pub
 
 # tools
-apt-get -y install ssh
-apt-get -y install git
-apt-get -y install htop
+sudo apt -y install ssh
+sudo apt -y install git
+sudo apt -y install htop
+sudo apt -y install tixati
+
+# Install Keypass
+sudo add-apt-repository ppa:phoerious/keepassxc
+sudo apt update
+sudo apt -y install keepassxc
 
 ### git commands
 # sudo -u $UserName git config --global user.name $MyName
@@ -35,13 +42,5 @@ apt-get -y install htop
 # sudo -u $UserName git config --global core.excludesfile ~/.gitignore_global
 # sudo -u $UserName git config --global color.ui true
 
-
-* Tixati
-* KeypassX
-* KICAD
-* Visual Studio Code
-* Vim or better update of this
-
 # Update .bashrc by appending file to it.
-date >> output.txt
-
+sudo ./appendBashrc.txt >> ~/.bashrc

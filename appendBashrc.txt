@@ -1,0 +1,5 @@
+
+# Appended items by startup script
+
+alias c='clear'
+alias l='ls -a -l'
