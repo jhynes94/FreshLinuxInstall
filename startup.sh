@@ -12,7 +12,7 @@ sudo apt -y upgrade
 
 # usr functions
 sudoapt -y install vim
-sudo apt -y install terminator
+sudo apt -y install tmux
 sudo apt -y install terminator
 # sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
 curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh
