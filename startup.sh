@@ -54,5 +54,8 @@ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 source ~/.bashrc
 
+#Setup SSH Keys
+ssh-keygen
+
 # Congrats!
 echo Install script completed.
